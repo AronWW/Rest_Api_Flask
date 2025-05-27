@@ -5,7 +5,7 @@ from marshmallow import ValidationError
 
 book_bp = Blueprint("books", __name__)
 
-# GET /books/ with pagination
+# GET /books/ 
 @book_bp.route("/", methods=["GET"])
 def get_books():
     page = request.args.get('page', 1, type=int)
