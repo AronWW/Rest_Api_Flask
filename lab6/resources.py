@@ -5,7 +5,6 @@ from schemas import book_schema, books_schema
 from marshmallow import ValidationError
 from flasgger import swag_from
 
-# Глобальна схема для Swagger (визначення моделі Book)
 swagger_template = {
     "swagger": "2.0",
     "info": {
